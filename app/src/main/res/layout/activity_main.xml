@@ -9,6 +9,7 @@
     android:background="@color/black">
 
     <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainer_mainActivity"
         android:layout_width="@dimen/cero_dp"
         android:layout_height="@dimen/cero_dp"
         app:layout_constraintBottom_toTopOf="@id/bottomNav_bottomNavActivity"
@@ -24,6 +25,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/menu"
         android:background="@color/color_back"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/white"
         />
 
   </androidx.constraintlayout.widget.ConstraintLayout>

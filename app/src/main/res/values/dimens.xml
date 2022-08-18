@@ -2,4 +2,5 @@
 <resources>
     <dimen name="cero_dp">0dp</dimen>
     <dimen name="size_bottom_nav">64dp</dimen>
+    <dimen name="size_text_good_morning">25sp</dimen>
 </resources>
