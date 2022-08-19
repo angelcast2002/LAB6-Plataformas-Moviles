@@ -24,8 +24,8 @@ class MainActivity : AppCompatActivity() {
             // Dependiendo el item del menu, mostramos el fragment deseado
             when(it.itemId) {
                 R.id.menu_home -> setCurrentFragment(FirstFragment())
-                //R.id.menu_library -> setCurrentFragment(SecondFragment())
-                //R.id.menu_search -> setCurrentFragment(ThirdFragment())
+                R.id.menu_search -> setCurrentFragment(SecondFragment())
+                R.id.menu_library -> setCurrentFragment(ThirdFragment())
             }
             true
         }

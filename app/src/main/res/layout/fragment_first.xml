@@ -20,6 +20,7 @@
         app:layout_constraintVertical_chainStyle="packed"
         android:textColor="@color/white"
         android:textSize="@dimen/size_text_good_morning"
+        android:textStyle="bold"
         />
 
     <TextView

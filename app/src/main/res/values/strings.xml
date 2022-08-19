@@ -7,4 +7,12 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="text_good_morning">Good morning,</string>
     <string name="text_angel_castellanos">Angel Castellanos</string>
+    <string name="text_second_frag_search">Search</string>
+    <string name="text_second_frag_your_top_genres">Your top genres</string>
+    <string name="txt_primer_genre">Rock</string>
+    <string name="txt_segundo_genre">Electro house</string>
+    <string name="txt_tercero_genre">New romantic</string>
+    <string name="txt_cuarto_genre">Classic rock</string>
+    <string name="text_most_recent">Most recent</string>
+    <string name="text_liked_songs">Liked Songs</string>
 </resources>

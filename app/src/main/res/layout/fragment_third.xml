@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ThirdFragment"
+    android:background="@color/black">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/tv_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/text_your_library_third_frag"
+        app:layout_constraintBottom_toBottomOf="@id/text_your_library_third_frag"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="@dimen/margin_third_frag"
+        android:src="@drawable/ic_baseline_account"
+        />
+
+    <TextView
+        android:id="@+id/text_your_library_third_frag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Library"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/margin_top_title"
+        android:layout_marginStart="@dimen/margin_third_frag"
+        android:textSize="@dimen/size_title"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_user"
+        />
+
+    <ImageView
+        android:id="@+id/ic_search_third_frag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/text_your_library_third_frag"
+        app:layout_constraintBottom_toBottomOf="@id/text_your_library_third_frag"
+        app:layout_constraintEnd_toStartOf="@id/ic_plus_third_frag"
+        android:layout_margin="@dimen/margin_third_frag"
+        android:src="@drawable/ic_menu_search"
+        />
+
+    <ImageButton
+        android:id="@+id/ic_plus_third_frag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text_your_library_third_frag"
+        app:layout_constraintBottom_toBottomOf="@id/text_your_library_third_frag"
+        android:src="@drawable/ic_baseline_add"
+        android:background="@android:color/transparent"
+        android:layout_margin="@dimen/margin_third_frag"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/cero_dp"
+        android:layout_height="@dimen/size_second_constraint"
+        app:layout_constraintTop_toBottomOf="@id/text_your_library_third_frag"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/margin_third_frag"
+        android:background="@color/color_second_constraint">
+
+        <ImageView
+            android:id="@+id/ic_arroy_third_frag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_baseline_arroy"
+            android:layout_margin="@dimen/margin_third_frag"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_most_recent"
+            app:layout_constraintStart_toEndOf="@id/ic_arroy_third_frag"
+            app:layout_constraintTop_toTopOf="@id/ic_arroy_third_frag"
+            app:layout_constraintBottom_toBottomOf="@id/ic_arroy_third_frag"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/margin_third_frag"
+            />
+
+        <ImageView
+            android:id="@+id/ic_corazon_third_frag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradiendrawable"
+            app:layout_constraintTop_toBottomOf="@+id/ic_arroy_third_frag"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/ic_baseline_favorite"
+            android:padding="@dimen/padding_ic_corazon"
+            android:layout_margin="@dimen/margin_third_frag"/>
+
+        <TextView
+            android:id="@+id/txt_liked_songs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_liked_songs"
+            app:layout_constraintTop_toTopOf="@id/ic_corazon_third_frag"
+            app:layout_constraintBottom_toTopOf="@+id/contador_third_frag"
+            app:layout_constraintStart_toEndOf="@id/ic_corazon_third_frag"
+            android:layout_marginHorizontal="@dimen/margin_third_frag"
+            app:layout_constraintVertical_chainStyle="packed"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/contador_third_frag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="775 songs"
+            app:layout_constraintTop_toBottomOf="@id/txt_liked_songs"
+            app:layout_constraintStart_toEndOf="@id/ic_corazon_third_frag"
+            app:layout_constraintBottom_toBottomOf="@id/ic_corazon_third_frag"
+            android:layout_marginHorizontal="@dimen/margin_third_frag"
+            android:textColor="@color/white"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

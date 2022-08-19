@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".SecondFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/title_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_second_frag"
+        android:layout_marginTop="@dimen/margin_top_title"
+        android:text="@string/text_second_frag_search"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_title"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_top_genres_second_frag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_second_frag"
+        android:layout_marginTop="@dimen/margin_top_title"
+        android:text="@string/text_second_frag_your_top_genres"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_search" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/first_gender_top"
+        android:layout_width="@dimen/cero_dp"
+        android:layout_height="@dimen/altura_genres_second_frag"
+        android:layout_margin="@dimen/margin_second_frag"
+        android:background="@drawable/esquinas_redondas"
+        app:layout_constraintEnd_toStartOf="@id/second_gender_top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_top_genres_second_frag">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_primer_genre"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/margin_second_frag"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintBottom_toBottomOf="parent"
+             android:src="@drawable/ic_music_genres"
+             android:layout_margin="@dimen/margin_second_frag"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/second_gender_top"
+        android:layout_width="@dimen/cero_dp"
+        android:layout_height="@dimen/altura_genres_second_frag"
+        android:layout_margin="@dimen/margin_second_frag"
+        android:background="@drawable/esquinas_redondas_gray_genres"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/first_gender_top"
+        app:layout_constraintTop_toBottomOf="@id/text_top_genres_second_frag" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_segundo_genre"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/margin_second_frag"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/ic_music_genres"
+            android:layout_margin="@dimen/margin_second_frag"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/third_gender_top"
+        android:layout_width="@dimen/cero_dp"
+        android:layout_height="@dimen/altura_genres_second_frag"
+        android:layout_margin="@dimen/margin_second_frag"
+        android:background="@drawable/esquinas_redondas_pink_genres"
+        app:layout_constraintEnd_toStartOf="@id/fourth_gender_top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/first_gender_top" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_tercero_genre"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/margin_second_frag"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/ic_music_genres"
+            android:layout_margin="@dimen/margin_second_frag"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fourth_gender_top"
+        android:layout_width="@dimen/cero_dp"
+        android:layout_height="@dimen/altura_genres_second_frag"
+        android:layout_margin="@dimen/margin_second_frag"
+        android:background="@drawable/esquinas_redondas_purplu_genres"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/third_gender_top"
+        app:layout_constraintTop_toBottomOf="@id/first_gender_top" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_cuarto_genre"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/margin_second_frag"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/ic_music_genres"
+            android:layout_margin="@dimen/margin_second_frag"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

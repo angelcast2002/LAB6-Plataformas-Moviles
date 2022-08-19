@@ -8,4 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="color_back">#171717</color>
+    <color name="gray_genres">#5C5C5C</color>
+    <color name="pink_genres">#C51162</color>
+    <color name="purplu_genres">#6200EA</color>
+    <color name="color_second_constraint">#070707</color>
 </resources>

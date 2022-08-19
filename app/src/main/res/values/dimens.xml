@@ -3,4 +3,11 @@
     <dimen name="cero_dp">0dp</dimen>
     <dimen name="size_bottom_nav">64dp</dimen>
     <dimen name="size_text_good_morning">25sp</dimen>
+    <dimen name="size_title">25sp</dimen>
+    <dimen name="margin_second_frag">10dp</dimen>
+    <dimen name="margin_top_title">25dp</dimen>
+    <dimen name="altura_genres_second_frag">100dp</dimen>
+    <dimen name="margin_third_frag">10dp</dimen>
+    <dimen name="size_second_constraint">150dp</dimen>
+    <dimen name="padding_ic_corazon">15dp</dimen>
 </resources>
